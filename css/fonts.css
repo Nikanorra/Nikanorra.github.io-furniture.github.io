@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "ProximaNovaT-Thin";
+  src:url("../fonts/ProximaNovaT-Thin.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Regular";
+  src:url("../fonts/ProximaNova-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNova-Bold";
+  src:url("../fonts/ProximaNova-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}

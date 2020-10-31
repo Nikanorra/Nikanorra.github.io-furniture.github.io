@@ -1,0 +1,16 @@
+//fonts
+$fontSize18: 18px;
+$fontReg: "ProximaNova-Regular";
+$fontbold: "ProximaNova-Bold";
+
+$colorBaseGrey: #1E2E36;
+$colorBaseGreen: #44C697;
+$colorHoverGreen: #30A67B;
+$colorWhite: #fff;
+
+$transition: 1s;
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+}

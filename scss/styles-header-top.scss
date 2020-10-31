@@ -1,0 +1,177 @@
+@import "vars.scss";
+
+body {
+  color: $colorBaseGrey;
+  font-size: $fontSize18;
+  font-weight: bold;
+}
+
+/*header top*/
+/*header top position*/
+.top-menu {
+  border-bottom: 1px solid $colorBaseGrey;
+}
+.top-menu .container {
+  @include flexCenter;
+  justify-content: space-between;
+  height: 60px;
+}
+/*header top position of contacts*/
+.contacts {
+  @include flexCenter;
+  justify-content: flex-start;
+}
+.contacts__social {
+  @include flexCenter;
+  margin-right: 80px;
+}
+.contacts__social-icons {
+  display: flex;
+}
+.contacts__social-icons a {
+  display: block;
+}
+/*header top position of mobile*/
+.contacts__mobile {
+  @include flexCenter;
+}
+
+.contacts__mobile-number {
+  @include flexCenter;
+}
+.top-menu__arrow {
+  transform: rotate(270deg);
+  margin-left: 10px;
+
+}
+.contacts__mobile-icon {
+  margin-right: 10px;
+}
+
+/*extra number*/
+.contacts__mobile-extra {
+  position: absolute;
+  top: 60px;
+  width: 200px;
+  display: none;
+}
+.contacts__mobile-wrap {
+  display: flex;
+}
+.contacts__mobile:hover .contacts__mobile-extra {
+  display: block;
+  background: white;
+}
+
+.info__bar {
+  display: none;
+  height: 20px;
+  width: 20px;
+  fill: $colorBaseGrey;
+}
+
+/*header top position of info*/
+.info {
+  @include flexCenter;
+  justify-content: flex-end;
+}
+.info__ul {
+  @include flexCenter;
+  z-index: 51;
+}
+.info__list a {
+  margin-left: 15px;
+  text-transform: uppercase;
+  transition: 1s;
+  border-bottom: 3px solid transparent;
+}
+.info__list a:hover {
+  border-bottom: 3px solid $colorBaseGreen;
+}
+
+
+
+@media screen and (max-width: 1240px) {
+  .contacts__social {
+    justify-content: flex-start;
+  }
+  .contacts__social-text {
+    font-size: 16px;
+  }
+  .contacts__social-icons svg {
+    height: 30px;
+    width: 30px;
+  }
+  .contacts__mobile-icon svg {
+    height: 20px;
+  }
+  .contacts__mobile-number {
+    font-size: 16px;
+  }
+  .info__ul {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .contacts__mobile-number {
+    font-size: 15px;
+  }
+  .contacts__social {
+    margin-right: 40px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts__social {
+    flex-direction: column;
+  }
+  .top-menu .container .col-6 {
+    width: 100%;
+  }
+  .top-menu .container {
+    flex-wrap: wrap;
+    height: 120px;
+  }
+  .contacts, .info {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .info__bar {
+    display: block;
+  }
+  .info__ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 115px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: white;
+  }
+  .info__list {
+    margin-bottom: 15px;
+  }
+
+  .contacts, .info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.contacts__social {
+    flex-direction: row;
+    width: 100%;
+}
+.contacts__social {
+    margin-right: 0;
+}
+.contacts__social-text {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.info__ul.active {
+  display: block;
+}
+
+}

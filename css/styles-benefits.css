@@ -1,0 +1,36 @@
+.benefits .container h2 {
+  font-size: 48px;
+  text-align: center; }
+
+.benefits .container h2:first-letter {
+  background: linear-gradient(to right, #44C697 50%, transparent 50%); }
+
+.benefits_wrapp {
+  display: flex;
+  justify-content: space-between; }
+
+.benefits_wrapp .col-4 {
+  position: relative; }
+
+.benefits_text {
+  position: absolute;
+  top: 77%;
+  left: 50px;
+  color: #fff; }
+
+.benefits_title {
+  display: inline;
+  font-size: 36px;
+  font-weight: bold;
+  border-bottom: 3px solid #44C697; }
+
+.benefits_title:hover .benefits_descr {
+  display: block; }
+
+.benefits_descr {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
+  display: none; }
+
+/*# sourceMappingURL=styles-benefits.css.map */

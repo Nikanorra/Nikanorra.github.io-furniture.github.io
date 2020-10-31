@@ -1,0 +1,81 @@
+.propose .propose__slide .propose__pic .container {
+  position: relative;
+  height: 785px; }
+
+.propose__bg {
+  padding: 80px 50px;
+  background-color: #fff;
+  position: absolute;
+  border-left: 15px solid #44C697;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.propose__pic {
+  background: url(../img/intro.jpg) no-repeat center;
+  background-size: cover;
+  height: 785px;
+  font-weight: bold;
+  font-size: 36px; }
+
+.propose__pic2 {
+  background: url(../img/intro2.jpg) no-repeat center;
+  background-size: cover;
+  height: 785px;
+  font-weight: bold;
+  font-size: 36px; }
+
+.propose__pic3 {
+  background: url(../img/intro3.jpg) no-repeat center;
+  background-size: cover;
+  height: 785px;
+  font-weight: bold;
+  font-size: 36px; }
+
+.propose__text {
+  width: 313px;
+  text-align: center; }
+
+.propose__text h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 50px; }
+
+.propose__text-title {
+  margin-bottom: 20px; }
+
+.propose__text-description {
+  font-weight: normal;
+  margin-bottom: 20px; }
+
+/*button*/
+.propose__text .btn {
+  margin-bottom: 40px; }
+
+.propose__text-count {
+  margin-bottom: 15px; }
+
+/*dots*/
+.propose__text-dots {
+  display: none; }
+
+.propose .propose__slide.slick-initialized.slick-slider .slick-prev.slick-arrow {
+  display: flex;
+  left: 11%;
+  top: 62%;
+  z-index: 10; }
+
+.propose .propose__slide.slick-initialized.slick-slider .slick-next.slick-arrow {
+  left: 15%;
+  right: 100%;
+  top: 62%; }
+
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 35px;
+  line-height: 1;
+  opacity: 1;
+  background-color: transparent;
+  color: #1E2E36; }
+
+/*# sourceMappingURL=styles-slide.css.map */
