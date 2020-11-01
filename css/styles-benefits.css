@@ -1,8 +1,10 @@
-.benefits .container h2 {
+.title {
   font-size: 48px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px; }
 
-.benefits .container h2:first-letter {
+.title:first-letter {
   background: linear-gradient(to right, #44C697 50%, transparent 50%); }
 
 .benefits_wrapp {
@@ -12,25 +14,106 @@
 .benefits_wrapp .col-4 {
   position: relative; }
 
+/*position*/
+.benefits__content {
+  position: relative; }
+
 .benefits_text {
   position: absolute;
-  top: 77%;
+  top: 80%;
   left: 50px;
-  color: #fff; }
+  color: transparent;
+  transition: 1s; }
 
 .benefits_title {
   display: inline;
   font-size: 36px;
   font-weight: bold;
-  border-bottom: 3px solid #44C697; }
-
-.benefits_title:hover .benefits_descr {
-  display: block; }
+  border-bottom: 3px solid #44C697;
+  color: #fff; }
 
 .benefits_descr {
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
-  display: none; }
+  width: 95%; }
+
+.benefits_text:hover {
+  top: 60%;
+  color: #fff; }
+
+@media screen and (max-width: 1700px) {
+  .benefits_text:hover {
+    top: 50%; } }
+@media screen and (max-width: 1490px) {
+  .benefits_title {
+    font-size: 30px; }
+
+  .title {
+    font-size: 40px;
+    margin-top: 70px;
+    margin-bottom: 30px; } }
+@media screen and (max-width: 1255px) {
+  .benefits_title {
+    font-size: 22px; }
+
+  .title {
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+
+  .benefits_text:hover {
+    top: 20%; } }
+@media screen and (max-width: 1000px) {
+  .benefits_wrapp .col-4 {
+    width: 100%;
+    text-align: center; }
+
+  .benefits_wrapp {
+    flex-wrap: wrap; }
+
+  .benefits_bg img {
+    width: 100%; }
+
+  .benefits_title {
+    font-size: 40px; }
+
+  .title {
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px; }
+
+  .benefits_text:hover {
+    top: 70%; }
+
+  .benefits_descr {
+    font-size: 19px;
+    margin-top: 22px; } }
+@media screen and (max-width: 670px) {
+  .benefits_title {
+    font-size: 30px; }
+
+  .title {
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px; }
+
+  .benefits_text:hover {
+    top: 60%; } }
+@media screen and (max-width: 560px) {
+  .benefits_title {
+    font-size: 20px; }
+
+  .title {
+    font-size: 35px;
+    margin-top: 80px;
+    margin-bottom: 40px; }
+
+  .benefits_descr {
+    font-size: 14px;
+    margin-top: 10px; }
+
+  .benefits_text:hover {
+    top: 45%; } }
 
 /*# sourceMappingURL=styles-benefits.css.map */
