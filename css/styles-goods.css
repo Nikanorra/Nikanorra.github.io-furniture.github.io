@@ -1,7 +1,4 @@
 @charset "UTF-8";
-.goods .container {
-  height: 1500px; }
-
 .goods__wrap {
   display: flex;
   flex-wrap: wrap; }
