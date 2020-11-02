@@ -1,11 +1,10 @@
+@charset "UTF-8";
 .goods .container {
   height: 1500px; }
 
-.goods__wrap.bed {
-  margin-bottom: 70px; }
-
 .goods__wrap {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap; }
 
 .goods__category-icon {
   fill: #1E2E36;
@@ -40,7 +39,8 @@
 
 /*cards*/
 .goods__item-pic {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 /*labe*/
 .goods__item-labe {
@@ -69,7 +69,9 @@
   display: flex;
   justify-content: space-between;
   font-size: 24px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding: 10px;
+  transition: .2s; }
 
 .name-price {
   display: flex;
@@ -84,5 +86,66 @@
   color: #BCBDBB;
   font-size: 18px;
   text-decoration: line-through; }
+
+.goods .container .goods__wrap .col-4 .goods__item {
+  position: relative;
+  height: 360px; }
+
+.goods__item-pic {
+  position: absolute;
+  top: 15px;
+  transition: 1s; }
+
+.goods__item-pic:hover {
+  top: 0;
+  background: #44C697;
+  color: #fff; }
+
+.goods__item-pic:hover .name-price__sale,
+.goods__item-pic:hover .name-price__old {
+  color: #fff; }
+
+/*svg*/
+@media screen and (max-width: 1000px) {
+  .goods__wrap {
+    flex-wrap: wrap; }
+
+  .goods__wrap .col-2 {
+    width: calc(100% / 12 * 4); } }
+@media screen and (max-width: 410px) {
+  .goods__wrap .col-2 {
+    width: 50%; } }
+/*карточки товаров*/
+@media screen and (max-width: 1400px) {
+  .goods__item-name {
+    font-size: 20px; } }
+@media screen and (max-width: 1200px) {
+  .goods__item-labe {
+    font-size: 15px; }
+
+  .labe_info, .labe_sale {
+    padding: 8px 10px; }
+
+  .goods__item-name {
+    font-size: 18px; }
+
+  .name-price__old {
+    font-size: 15px; }
+
+  .name-price {
+    align-items: center; } }
+@media screen and (max-width: 1115px) {
+  .goods__wrap .col-4 {
+    width: 50%; } }
+@media screen and (max-width: 790px) {
+  .goods__wrap .col-4 {
+    width: 100%; } }
+@media screen and (max-width: 380px) {
+  .name-price {
+    flex-direction: column;
+    justify-content: center; }
+
+  .name-price__sale {
+    margin-right: 0; } }
 
 /*# sourceMappingURL=styles-goods.css.map */
