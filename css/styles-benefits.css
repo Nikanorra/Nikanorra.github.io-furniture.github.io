@@ -42,6 +42,18 @@
   top: 60%;
   color: #fff; }
 
+/*arrow*/
+.benefits_wrapp.slick-initialized.slick-slider .slick-next.slick-arrow {
+  right: 3%; }
+
+.benefits_wrapp.slick-initialized.slick-slider .slick-prev.slick-arrow {
+  left: 2%;
+  z-index: 100; }
+
+.slick-prev:before, .slick-next:before {
+  color: #fff;
+  opacity: .4; }
+
 @media screen and (max-width: 1700px) {
   .benefits_text:hover {
     top: 50%; } }
@@ -89,6 +101,25 @@
   .benefits_descr {
     font-size: 19px;
     margin-top: 22px; } }
+@media screen and (max-width: 800px) {
+  /*arrow*/
+  .benefits_wrapp.slick-initialized.slick-slider .slick-next.slick-arrow {
+    right: 6%; }
+
+  .benefits_wrapp.slick-initialized.slick-slider .slick-prev.slick-arrow {
+    left: 5%;
+    z-index: 100; } }
+@media screen and (max-width: 700px) {
+  /*arrow*/
+  .benefits_wrapp.slick-initialized.slick-slider .slick-next.slick-arrow {
+    right: 15%; }
+
+  .benefits_wrapp.slick-initialized.slick-slider .slick-prev.slick-arrow {
+    left: 10%;
+    z-index: 100; }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 30px; } }
 @media screen and (max-width: 670px) {
   .benefits_title {
     font-size: 30px; }
