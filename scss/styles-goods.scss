@@ -1,0 +1,186 @@
+@import "vars.scss";
+
+// .goods__wrap.bed {
+//   margin-bottom: 70px;
+// }
+.goods__wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.goods__category-icon {
+  fill: $colorBaseGrey;
+  transition: .7s;
+}
+.goods__category-text {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 3px solid transparent;
+  text-align: center;
+  transition: .7s;
+}
+.goods__category-text p {
+  padding-top: 5px;
+}
+.goods__category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goods__category-text:hover {
+  border-bottom: 3px solid $colorBaseGreen;
+
+}
+.goods__category-icon:hover {
+  fill: $colorBaseGreen;
+}
+.goods__wrap.row {
+  margin-bottom: 80px;
+}
+
+/*cards*/
+.goods__item-pic {
+  position: relative;
+  overflow: hidden;
+}
+/*labe*/
+.goods__item-labe {
+  position: absolute;
+  top: 2%;
+  color: $colorWhite;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+.labe_info {
+  background-color: $colorBaseGrey;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.labe_sale {
+  background-color: $colorRed;
+  padding: 10px 15px;
+  display: inline-block;
+  width: 75%;
+}
+
+/*text*/
+.goods__item-name {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px;
+  transition: .2s;
+}
+.name-price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.name-price__sale {
+  color: $colorRed;
+  margin-right: 10px;
+}
+.name-price__old {
+  color: $colorLigthGrey;
+  font-size: 18px;
+  text-decoration: line-through;
+}
+
+.goods .container .goods__wrap .col-4 .goods__item {
+  position: relative;
+  height: 360px;
+}
+.goods__item-pic {
+  position: absolute;
+  top: 15px;
+  transition: 1s;
+}
+.goods__item-pic:hover {
+  top: 0;
+  background: $colorBaseGreen;
+  color: $colorWhite;
+}
+.goods__item-pic:hover .name-price__sale,
+.goods__item-pic:hover .name-price__old {
+  color: $colorWhite;
+}
+
+
+/*btn position*/
+.goods .container .goods__wrap {
+  justify-content: center;
+}
+.goods .container .goods__wrap button {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+/*svg*/
+@media screen and (max-width: 1000px) {
+  .goods__wrap {
+    flex-wrap: wrap;
+  }
+  .goods__wrap .col-2 {
+    width: calc(100% / 12 * 4);
+  }
+}
+@media screen and (max-width: 410px) {
+  .goods__wrap .col-2 {
+    width: 50%;
+  }
+}
+
+
+/*карточки товаров*/
+@media screen and (max-width: 1400px) {
+  .goods__item-name {
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 1200px) {
+  .goods__item-labe {
+    font-size: 15px;
+}
+  .labe_info, .labe_sale {
+    padding: 8px 10px;
+  }
+  .goods__item-name {
+    font-size: 18px;
+  }
+  .name-price__old {
+    font-size: 15px;
+}
+.name-price {
+  align-items: center;
+}
+}
+@media screen and (max-width: 1115px) {
+  .goods__wrap .col-4 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .goods__wrap .col-4 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .name-price {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .name-price__sale {
+    margin-right: 0;
+}
+}

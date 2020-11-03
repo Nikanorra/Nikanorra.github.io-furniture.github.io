@@ -1,12 +1,15 @@
-const anchors = document.querySelectorAll('a[href*="#"]')
 
-for (let anchor of anchors) {
-	anchor.addEventListener("click", function(event) {
-		event.preventDefault();
-		const blockId = anchor.getAttribute('href')
-		document.querySelector('' + blockId).sccrollIntoView({
-			behavior: "smooth",
-			block: "start"
-		})
-	})
-}
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 40){
+      $('#scrollBtn').fadeIn();
+    } else{
+      $('#scrollBtn').fadeOut();
+    }
+  });
+
+  $("#scrollBtn").click(function(){
+    $('html ,body').animate({scrollTop : 0},800);
+  });
+});
