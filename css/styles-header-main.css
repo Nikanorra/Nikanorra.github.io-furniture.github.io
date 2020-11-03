@@ -85,7 +85,10 @@
     flex-direction: column;
     background-color: #fff;
     position: absolute;
-    align-items: flex-start; }
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 15px;
+    padding-top: 10px; }
 
   .main-menu__nav .main-menu__ul .main-menu__list .menu__arrow {
     justify-content: flex-start;

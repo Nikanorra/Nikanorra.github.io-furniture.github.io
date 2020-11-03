@@ -102,6 +102,13 @@
 .goods__item-pic:hover .name-price__old {
   color: #fff; }
 
+/*btn position*/
+.goods .container .goods__wrap {
+  justify-content: center; }
+
+.goods .container .goods__wrap button {
+  margin-top: 50px; }
+
 /*svg*/
 @media screen and (max-width: 1000px) {
   .goods__wrap {

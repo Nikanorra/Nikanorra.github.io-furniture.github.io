@@ -46,6 +46,10 @@ footer {
   display: flex; }
 
 /*phones*/
+.footer__content-info-phone-wrap {
+  color: #44C697;
+  font-weight: bold; }
+
 .footer__content-info-phone {
   display: flex;
   align-items: flex-start;
@@ -73,6 +77,20 @@ footer {
 /*img*/
 .footer__wrapp .col-7 {
   background-image: url(../img/footer.jpg); }
+
+/*scroll*/
+footer {
+  position: relative; }
+
+.scroll {
+  position: absolute;
+  color: #fff;
+  font-size: 16px;
+  bottom: 490px;
+  padding: 17px 21px;
+  background-color: #44C697;
+  border-radius: 50%;
+  z-index: 999; }
 
 @media screen and (max-width: 1765px) {
   .footer__wrapp {

@@ -61,8 +61,7 @@
 
 /*dots*/
 .propose__text-dots > {
-  width: 30px;
-  height: 30px; }
+  cursor: pointer; }
 
 /*arrow*/
 @media screen and (max-width: 1050px) {
