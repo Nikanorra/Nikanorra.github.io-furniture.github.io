@@ -91,6 +91,9 @@
     font-size: 25px;
     margin-bottom: 20px;
 }
+  .propose__slide.slick-initialized.slick-slider .slick-list.draggable .slick-track {
+    height: 500px;
+  }
 }
 @media screen and (max-width: 430px) {
   .propose {
@@ -117,5 +120,8 @@
   .propose__text-description {
     font-size: 15px;
     margin-bottom: 20px;
+}
+.propose__slide.slick-initialized.slick-slider .slick-list.draggable .slick-track {
+  height: 370px;
 }
 }
